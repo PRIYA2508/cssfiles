@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: teal;
+        }
+        .container{
+            border: white 2px solid ;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            animation: orbit 4s linear infinite reverse forwards;
+            animation-direction: ;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            /* animation-name: circle;
+            animation-duration: 5s;
+            animation-delay: 1s;
+            animation-iteration-count: 1;
+            animation-timing-function: ease-in;
+            animation-fill-mode: forwards ;*/
+            border-radius: 50%; 
+        }
+        @keyframes orbit {
+            from{
+                transform: rotate(0);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+       /* @keyframes circle {
+        0%{
+            transform: translate(0,0);
+        }
+        25%{
+            transform: translate(200px ,0);
+        }
+        50%{
+            transform: translate(200px , 200px);
+        }
+        100%{
+            transform: translate(0, 200px);
+        }
+        
+       } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+    </div>
+</body>
+</html>
