@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            border: 2px solid red;
+            /* by default grid works as top to bottom */
+            display: grid;
+            column-gap: 5px;
+            row-gap: 20px;
+            /* covert these boxes into column */
+            /* grid-template-columns: 100px 200px 300px 400px 500px ; */
+            /* if u want to make 4 coloum with same gap and width */
+            /* grid-template-columns: 1fr 1fr 1fr 1fr ; */
+            /* make first column of 2fr */
+            /* grid-template-columns: 2fr 1fr 1fr 1fr; */
+            /* -----for example you have to give same width to 4 columns and u don't want to write again and again then we will givw repeat property.-----*/
+            /* grid-template-columns: repeat(2,1fr); */
+            /* grid-template-rows: 200px 80px; */
+            /* jin rows ko heigght nahi dei un rows kei height jo auto-rows sei define karenge  */
+            /* grid-auto-rows: 150px; */
+            /* maanlo humko ek container mai column banane hai pr humko nahi pata ek row mai kitne coloumn aayenge toh hum 
+            AUTO-FILL  use karenge pr uske liye humko width dene honge  */
+            /* grid-template-columns: repeat(AUTO-FILL,100px); */
+            /* jitne auto likhte jaogai utne boxes bante jaayenge  */
+            grid-template-columns: auto auto auto auto ;
+        }
+        .box{
+            border: 2px green solid;
+            padding: 12px;
+           
+
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="container">
+        <div class="box" id="box-1">box-1</div>
+        <div class="box" id="box-2">box-2</div>
+        <div class="box" id="box-3">box-3</div>
+        <div class="box" id="box-4">box-4</div>
+        <div class="box" id="box-5">box-5</div>
+        <div class="box" id="box-6">box-6</div>
+        <div class="box" id="box-7">box-7</div>
+        <div class="box" id="box-8">box-8</div>
+        <div class="box" id="box-9">box-9</div>
+        <div class="box" id="box-10">box-10</div>
+    </div>
+</body>
+</html>
