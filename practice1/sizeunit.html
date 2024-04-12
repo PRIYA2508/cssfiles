@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      /*  p{
+            font-size: 2rem;
+        }
+        .container{
+            font-size: 10px;
+            border: solid black 2px;
+            padding: 2px;
+        }
+        .box{
+            font-size: 10em;
+            border: solid red 2px;
+            padding: 2em;
+            margin: 1px;
+        }
+        */
+        .cont{
+            background-color: brown;
+            border: solid black 2px;
+            padding: 3px;
+            margin: 2px;
+            height: 800px;
+            display: flex;
+           /* flex-direction:column;
+            flex-wrap: wrap;
+            justify-content:space-evenly;
+            align-items:start ;
+            align-content:flex-start;
+            */
+
+        }
+        .box{
+            width: 150px;
+            height: 150px;
+            border: darkmagenta 5px solid;
+            padding: 2px;
+            margin: px;
+        }
+        #box1{
+            background-color: aquamarine;
+            /*order: 10;
+            flex-shrink: 4px;
+            align-self: center;*/
+        }
+        #box2{
+            background-color: aqua;
+           /* order: 700;*/
+        }
+        #box3{
+            background-color: pink;
+           /* order: 180;*/
+        }
+        #box4{
+            background-color: blueviolet;
+           /* order: 5000;*/
+            /*flex-shrink: 700;*/
+            /*flex-grow: 5;
+            flex-basis: 200px;
+            */
+        }
+    @media(min-width:640px){
+        .cont{
+            flex-direction: row;
+        }
+    }
+    @media(max-width:640px){
+        .cont{
+            flex-direction: column;
+        }
+    }
+    </style>
+</head>
+<body>
+ <!--
+    <p> hello ji </p>
+    <div class="container">
+        <div class="box">
+            Welcome to code help 
+        </div>
+    </div>
+-->
+
+<!-- FLEX BOX CONTENT -->
+<div class="cont">
+    <div class="box" id="box1"> box1</div>
+    <div class="box" id="box2"> box2</div>
+    <div class="box" id="box3"> box3</div>
+    <div class="box" id="box4"> box4</div>
+   
+</div>
+
+</body>
+</html>

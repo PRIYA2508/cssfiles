@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        :root{
+            --background-container: #cfcaca;
+            --box-background-color: #fff;
+            --secondary-text-color: #444;
+            --primary-text-color: #222;
+        }
+         .dark{
+            --background-container: #111;
+            --box-background-color: #333;
+            --secondary-text-color: #ddd;
+            --primary-text-color: #fff;
+
+        } 
+        .container{
+            min-height: 100vh;
+            padding: 20px;
+            background-color: var(--background-container);
+            display: none;
+        }
+        h1{
+            text-align: center;
+            padding: 20px;
+            color: var(--primary-text-color);
+            border-radius: 10px;
+
+        }
+        body{
+            text-align: center;
+        }
+        .box{
+            background-color: var(--box-background-color);
+            margin-block: 30px;
+            padding: 40px;
+            border-radius: 20px;
+            color: var(--secondary-text-color);
+
+        }
+        h2{
+            color: var(--primary-text-color);
+            margin-bottom: 30px;
+            
+        }
+      
+
+        .content{
+            width: 200px;
+            height: 200px;
+            background-color: teal;
+            margin: 50px;
+            /* transition:  1s ease-in-out all ; */
+             transition-duration: 1s ;
+            transition-property: all;
+            transition-delay: 0.1s;
+            transition-timing-function: cubic-bezier(0.31, -0.16, 1, 1); 
+        }   
+        .content:hover{
+             /* background-color: palevioletred;
+            cursor: pointer;
+            border-radius: 50%;
+            transform: rotate(120deg);  */
+            transform: scale(1.2);
+           
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container dark ">
+        <h1>Nature Park</h1>
+        <div class="box dark">
+            <h2>Waterfalls</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, fuga.</p>
+        </div>
+        <div class="box dark ">
+        <h2>Hills</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="box dark">
+            <h2>Snow Mountain</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+    </div>
+
+    <div class="content">
+       
+
+    </div>
+</body>
+</html>

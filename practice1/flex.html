@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --primary-color: teal;
+
+        }
+        .ew{
+            background-color: aquamarine;
+            border: blue 4px solid;
+            width: 500px;
+            height: 800px;
+            margin: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .ox{
+            background-color: rgb(167, 167, 24);
+            border: black 3px solid;
+            width: 250px;
+            height: 900px;
+            /* x-axis , y-axis , color*/
+            box-shadow: 10px 15px  brown ;
+            /*x-axis , y-axis , blur , color*/
+            box-shadow: 10px 15px 5px rgb(204, 59, 124);
+            /* x-axis , y-axis , blur , kitna mota border chaiye , color*/
+            box-shadow: 10px 15px 5px 60px rgb(70, 19, 27);
+            /*inside shadow*/
+            box-shadow: inset 10px 15px 5px 40px pink;
+            /*add multiple shadow  with the help of comma */
+            box-shadow: 15px 10px tomato , 40px 30px 5px rgb(141, 62, 145);
+            /*custom vairable: (par yeah braces kei andar hi use ho saktein hai uske bhar nahi 
+            agr uske bhar us ekarna hai toh root mai define karna padega )*/
+            --custom-width: 350px;
+            width: var(--custom-width);
+            box-shadow: 10px 15px var(--primary-color)  ; 
+
+        }
+        #head1{
+            /*x-axis , y-axis , blur, motu border ,color)*/
+            text-shadow: 5px 2px  white , 7px 5px grey;
+            animation: 5s ease-in 1s infinite alternate none running mov ;
+        }
+  
+       .hed{
+            display: inline-block;
+            border: 2px solid red;
+            padding: 10px; 
+            box-sizing: border-box;
+            position: relative;
+            background-color: palevioletred ;
+           /* animation-name: move;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-delay: 0s;
+            animation-direction:normal;
+            animation-timing-function: linear;
+            */
+
+        }
+        @keyframes mov {
+            from{
+                top: 600px;
+                left: 1350px;
+            }
+
+            to{
+                top: 800px;
+                left: 0;
+
+            }
+            
+        }
+
+        
+
+    </style>
+
+  
+</head>
+<body>
+    <div class="head">
+        <h1 class="hed"> welcome to snowfall</h1>
+    </div>
+
+    <div class="ew">
+        <div class="ox">
+            <img src="snow4.jpg" alt="pic1" width="47%">
+            <h2 id="head1"> Welcome to Snow-Area</h2>
+            <p>Lorem, ipsum dolor sit amet 
+                consectetur adipisicing elit. 
+                Quia, delectus?</p>
+               
+        </div>
+    </div>
+    </body>
+    </body>
+    </html>
+
+
+
+    <!--  STYLE WALA PART IDHAR LIKHA HAI TOH AGR YEAH WALA CODE CHALANA
+        HO TOH YAHA SEI HATA LENA  <style>
+     /*   .{
+            box-sizing: border-box;
+        }
+   
+        .container{
+      background-color: blueviolet;
+      border: solid blanchedalmond 5px;
+      margin: 5px;
+      padding: 5px;
+      display: flex;
+      flex-direction: row;
+      width: 60%;
+
+    }
+    #rightbox{
+       background-color: aquamarine;
+       border: solid brown 5px;
+       margin: 5px;
+       padding: 5px;
+       width: 27%;
+       flex-direction: column;
+    }
+    #leftbox{
+        background-color: chocolate;
+        border: rgb(900, 990, 30) solid 5px;
+        margin: 5px;
+        padding: 5px;
+        width: 77%;
+    }
+    p{
+        border: solid red 2px;
+    }
+    @media(max-width:640px){
+        .container{
+            flex-direction: column;
+        }
+    }
+    @media(max-width:640px){
+       #leftbox{
+        flex-direction: column;
+       }
+    }
+    */
+        </style>
+
+
+    <div class="container">
+
+        <div id="rightbox">
+          <p> Text 1</p>
+          <p> Text 2</p>
+        </div>
+
+        <div id="leftbox">
+        <img src="snow1.jpg" alt="pic1" width="250px">
+        </div>
+    </div>
+-->
+
+

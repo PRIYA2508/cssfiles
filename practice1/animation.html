@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        *{ 
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        .conatiner{
+            background-color: pink;
+            width: 100vw;
+            height: 200vh;
+            border: solid black 3px;
+            
+        }
+        .box{
+            width: 250px;
+            height: 80px;
+            background-color: blue;
+            border: solid rgb(172, 13, 13) 2px;
+            border-radius: 10px;
+            margin: 4px;
+            padding: 3px;
+            position: relative;
+            animation: 3s ease-in 1s infinite reverse both running slidin;
+        }
+        @keyframes slidin{
+            
+            from{
+               top: 0;
+               left: 0;
+            }
+
+            to{
+                top: 0;
+                left: 1200px;
+
+            }
+        }
+    </style>
+</head>
+<body>
+   <div class="conatiner">
+    <div class="box"></div>
+
+   </div> 
+</body>
+</html>

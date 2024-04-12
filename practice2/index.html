@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family:Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+        }
+       .box{
+        width: 200px;
+        height: 200px;
+        border: 20px solid blueviolet;
+        padding: 30px;
+        margin: 40px;
+       }
+        .Element_Selector , .Id_Selector ,  .class_Selector {
+        color: red;
+        }
+        .class_Selector h2{
+           color: blueviolet; 
+          
+        }
+        .class_Selector p{
+            background-color: #ffff66;
+        }
+        .Element_Selector h2{
+            background-color: #ffff66 ;
+        }
+
+        p:hover{
+             color: aqua;
+        }
+        div{
+            border: brown dotted 2px;
+            /* div body kaa child hai toh woh uska 80% lega */
+            width: 80%;
+            padding: 2rem;
+            margin: 2rem;
+        }
+        section{ 
+            border: solid rebeccapurple 3px;
+            /* section jo hai woh div kaa child hai toh div kei size kei 70% width       */
+            width: 70%;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+        .box{
+           /* color: transparent;
+            text-shadow: 2px 2px 6px black;*/
+            text-transform:lowercase;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="slow">
+        <h1 class="box"> Box </h1>
+        <section class="main">
+            <articlle class="Element_Selector">
+                <h2>Element Selector</h2>
+                <p> The element selector selcts  HTML element based on the element name.</p>
+            </articlle>
+            <articlle class="Id_Selector">
+                <h2>Id Selector</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam voluptatem corporis possimus, optio in ea!</p>
+            </articlle>
+            <articlle class="class_Selector">
+                <h2>Class Selector</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam voluptatem corporis possimus, optio in ea! 
+                    Lorem ipsum,dolor sit amet consectetur adipisicing elit. Enim, culpa!
+                </p>
+            </articlle>
+        </section>
+    </div>
+</body>

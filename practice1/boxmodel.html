@@ -1,0 +1,172 @@
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+        h1{
+           background-color: blueviolet;
+           border: dotted 2px aqua;
+           width: fit-content;
+           border-radius : 5px;
+           align-items: center;
+          /* border-radius: 9px; 
+          border-top-right-radius: 5px;
+          
+          border-top: aqua solid 2px;
+
+          //isse tarah sei hum top,left,right,bottom
+          mai use kar sakten hai jaha top hai waha left , right
+          bottom likh sakten hai */ 
+        }
+        .firstclass{
+            background-color: beige;
+            border: solid black 3px;
+            border-radius: 5px;
+            width: 350px;
+            padding: 30px 50px 70px 20px;
+            margin: 20px 25px 30px 35px;
+ 
+        }
+        .secondclass{
+            background-color: brown;
+            border: solid black 3px;
+        }
+        .thirdclass{
+            background-color: aquamarine;
+            border: solid black 3px;
+        }
+       /*  this part is from 16th lecture( lecture on display)*/
+       *{
+            margin: 0;
+            padding: 0;
+            /* box sizing border-box
+             use karne sei jo actual 
+             box kaa size hai woh increase 
+             nahi karega bss jab hum padding 
+             use karenge tab content add hota 
+             rahega and woh adjust hota rahega  */
+             box-sizing: border-box;
+        }
+        /*  .box{
+            width: 100px;
+            height: 100px;
+            border: solid aqua 1px;
+            padding: 10px;
+        }*/
+        span{
+            border: solid black 2px;
+            width: 150px;
+            height: 150px;
+            margin: 15px;
+            display: inline-block;
+            padding: 40px;
+            
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <h1> Welcome to Landing page </h1>
+    <p class = "firstclass">Lorem ipsum dolor sit amet consectetur 
+        adipisicing elit. Sequi minus adipisci
+        fugit autem totam in eius laboriosam 
+        tempore enim quasi sunt libero facilis, 
+        debitis, accusamus hic velit nulla 
+        consequatur quam!</p>
+        <p class = "secondclass">Lorem ipsum dolor sit amet 
+            consectetur adipisicing 
+            elit. Possimus, minima!</p>
+        <p class = "thirdclass">
+        Lorem ipsum dolor sit amet.
+        </p>
+        <div class="box"> Welcome to codehelp</div>
+         /* this part also from 16th lecture */
+         <span> my name is priya sharma </span>
+         <span>my name is shiva sharma</span>
+</body>
+</html>
+
+-->
+  
+<!-- this portion is fr lecture on display -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        div{
+            border: black 2px solid;
+            height: 800vh;
+            width: 55vw;
+            background-color: brown;
+        }
+        img{
+            margin : 10px;
+            border: solid red 2px;
+            padding: 3px;
+        }
+       /* .img2{
+            position: absolute;
+            top: 100px;
+        }*/
+        .img4{
+            position: fixed;
+           top: 4px;
+        }
+        .img3{
+            position: sticky;
+            top: 30 px;
+        }
+      
+    </style>
+</head>
+<body>
+    <div class="cout">
+        <img 
+        src="snow1.jpg"
+        alt="phot1"
+        width="200px"
+        height="200px"
+        class="img1"
+        >
+
+        <img 
+        src="snow2.jpg" 
+        alt="photo2"
+        width="200px"
+        height="200px"
+        class="img2"
+        >
+
+        <img 
+        src="snow3.jpg" 
+        alt="photo3"
+        width="200px"
+        height="200px"
+        class="img3"
+        > 
+
+        <img 
+        src="snow4.jpg" 
+        alt="photo4"
+        width="200px"
+        height="200px"
+        class="img4 "
+        >
+    </div>
+</body>
+</html>
+
